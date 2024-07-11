@@ -1,0 +1,7 @@
+Layer Name,M,N,K
+Layer 1 - Query projection (per head),1024,64,1280
+Layer 1 - Key projection (per head),1024,64,1280
+Layer 1 - Value projection (per head),1024,64,1280
+Layer 1 - Attention output projection (concatenated),1024,1280,1280
+Layer 1 - Feed-forward: First linear layer,1024,5120,1280
+Layer 1 - Feed-forward: Second linear layer,1024,1280,5120
