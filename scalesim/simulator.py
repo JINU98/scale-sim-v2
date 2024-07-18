@@ -45,7 +45,8 @@ class simulator:
     #
     def run(self):
         assert self.params_set_flag, 'Simulator parameters are not set'
-
+        total_compute_cycles=0
+        total_attention_cycle=0
         # 1. Create the layer runners for each layer
         for i in range(self.num_layers):
             this_layer_sim = layer_sim()
@@ -69,11 +70,11 @@ class simulator:
         # 2. Run each layer
         # TODO: This is parallelizable
         for single_layer_obj in self.single_layer_sim_object_list:
-
             if self.verbose:
                 layer_id = single_layer_obj.get_layer_id()
-                print('\nRunning Layer ' + str(layer_id))
-
+                layer_name= single_layer_obj.topo.get_layer_name(layer_id)
+                print('\nRunning Layer ' + str(layer_id) + ' : ' + layer_name)
+            
             single_layer_obj.run()
 
             if self.verbose:
@@ -82,6 +83,11 @@ class simulator:
                 stall_cycles = comp_items[1]
                 util = comp_items[2]
                 mapping_eff = comp_items[3]
+                total_compute_cycles=total_compute_cycles + comp_cycles
+                # total_attention_cycle = 
+                if('Attention' in layer_name):
+                    total_attention_cycle=total_attention_cycle+comp_cycles
+
                 print('Compute cycles: ' + str(comp_cycles))
                 print('Stall cycles: ' + str(stall_cycles))
                 print('Overall utilization: ' + "{:.2f}".format(util) +'%')
@@ -101,10 +107,15 @@ class simulator:
                 single_layer_obj.save_traces(self.top_path)
                 if self.verbose:
                     print('Done!')
+        print("\n\n----------------------------------------------------------------------------------------\n\n")
 
         self.all_layer_run_done = True
 
         self.generate_reports()
+        print("Total Compute Cycles:",total_compute_cycles)
+        print("Total Attention Cycles:",total_attention_cycle)
+        print("Attention %:", total_attention_cycle/total_compute_cycles)
+        print("\n\n")
 
     #
     def generate_reports(self):
