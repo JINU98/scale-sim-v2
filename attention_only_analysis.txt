@@ -1,0 +1,336 @@
+
+
+
+Total Compute Cycles: 42944
+Total Attention Cycles: 1532
+Attention %: 0.03567436661698957
+Model Name and Parameters gpt2-small(124M)
+Embeddding Dimension: 768
+Number of Heads: 12
+Context Length 128
+Configuration: gpt2-small(124M)_768_12_128
+
+
+
+
+
+
+Total Compute Cycles: 116576
+Total Attention Cycles: 1532
+Attention %: 0.013141641504254736
+Model Name and Parameters gpt2-large(774M)
+Embeddding Dimension: 1280
+Number of Heads: 20
+Context Length 256
+Configuration: gpt2-large(774M)_1280_20_256
+
+
+
+
+
+
+Total Compute Cycles: 47546
+Total Attention Cycles: 6134
+Attention %: 0.1290119042611366
+Model Name and Parameters gpt2-small(124M)
+Embeddding Dimension: 768
+Number of Heads: 12
+Context Length 1024
+Configuration: gpt2-small(124M)_768_12_1024
+
+
+
+
+
+
+Total Compute Cycles: 227024
+Total Attention Cycles: 1532
+Attention %: 0.00674818521389809
+Model Name and Parameters gpt2-xl(1558M)
+Embeddding Dimension: 1600
+Number of Heads: 25
+Context Length 128
+Configuration: gpt2-xl(1558M)_1600_25_128
+
+
+
+
+
+
+Total Compute Cycles: 231626
+Total Attention Cycles: 6134
+Attention %: 0.02648234654140727
+Model Name and Parameters gpt2-xl(1558M)
+Embeddding Dimension: 1600
+Number of Heads: 25
+Context Length 1024
+Configuration: gpt2-xl(1558M)_1600_25_1024
+
+
+
+
+
+
+Total Compute Cycles: 75158
+Total Attention Cycles: 1532
+Attention %: 0.020383724952766174
+Model Name and Parameters gpt2-medium(355M)
+Embeddding Dimension: 1024
+Number of Heads: 16
+Context Length 128
+Configuration: gpt2-medium(355M)_1024_16_128
+
+
+
+
+
+
+Total Compute Cycles: 53682
+Total Attention Cycles: 12270
+Attention %: 0.22856823516262434
+Model Name and Parameters gpt2-small(124M)
+Embeddding Dimension: 768
+Number of Heads: 12
+Context Length 2048
+Configuration: gpt2-small(124M)_768_12_2048
+
+
+
+
+
+
+Total Compute Cycles: 227024
+Total Attention Cycles: 1532
+Attention %: 0.00674818521389809
+Model Name and Parameters gpt2-xl(1558M)
+Embeddding Dimension: 1600
+Number of Heads: 25
+Context Length 256
+Configuration: gpt2-xl(1558M)_1600_25_256
+
+
+
+
+
+
+Total Compute Cycles: 44478
+Total Attention Cycles: 3066
+Attention %: 0.06893295561850803
+Model Name and Parameters gpt2-small(124M)
+Embeddding Dimension: 768
+Number of Heads: 12
+Context Length 512
+Configuration: gpt2-small(124M)_768_12_512
+
+
+
+
+
+
+Total Compute Cycles: 228558
+Total Attention Cycles: 3066
+Attention %: 0.013414538104113617
+Model Name and Parameters gpt2-xl(1558M)
+Embeddding Dimension: 1600
+Number of Heads: 25
+Context Length 512
+Configuration: gpt2-xl(1558M)_1600_25_512
+
+
+
+
+
+
+Total Compute Cycles: 42944
+Total Attention Cycles: 1532
+Attention %: 0.03567436661698957
+Model Name and Parameters gpt2-small(124M)
+Embeddding Dimension: 768
+Number of Heads: 12
+Context Length 256
+Configuration: gpt2-small(124M)_768_12_256
+
+
+
+
+
+
+Total Compute Cycles: 85896
+Total Attention Cycles: 12270
+Attention %: 0.14284716401229394
+Model Name and Parameters gpt2-medium(355M)
+Embeddding Dimension: 1024
+Number of Heads: 16
+Context Length 2048
+Configuration: gpt2-medium(355M)_1024_16_2048
+
+
+
+
+
+
+Total Compute Cycles: 76692
+Total Attention Cycles: 3066
+Attention %: 0.039978094194961664
+Model Name and Parameters gpt2-medium(355M)
+Embeddding Dimension: 1024
+Number of Heads: 16
+Context Length 512
+Configuration: gpt2-medium(355M)_1024_16_512
+
+
+
+
+
+
+Total Compute Cycles: 237762
+Total Attention Cycles: 12270
+Attention %: 0.051606228076816314
+Model Name and Parameters gpt2-xl(1558M)
+Embeddding Dimension: 1600
+Number of Heads: 25
+Context Length 2048
+Configuration: gpt2-xl(1558M)_1600_25_2048
+
+
+
+
+
+
+Total Compute Cycles: 65954
+Total Attention Cycles: 24542
+Attention %: 0.37210783273190406
+Model Name and Parameters gpt2-small(124M)
+Embeddding Dimension: 768
+Number of Heads: 12
+Context Length 4096
+Configuration: gpt2-small(124M)_768_12_4096
+
+
+
+
+
+
+Total Compute Cycles: 75158
+Total Attention Cycles: 1532
+Attention %: 0.020383724952766174
+Model Name and Parameters gpt2-medium(355M)
+Embeddding Dimension: 1024
+Number of Heads: 16
+Context Length 256
+Configuration: gpt2-medium(355M)_1024_16_256
+
+
+
+
+
+
+Total Compute Cycles: 250034
+Total Attention Cycles: 24542
+Attention %: 0.09815465096746842
+Model Name and Parameters gpt2-xl(1558M)
+Embeddding Dimension: 1600
+Number of Heads: 25
+Context Length 4096
+Configuration: gpt2-xl(1558M)_1600_25_4096
+
+
+
+
+
+
+Total Compute Cycles: 98168
+Total Attention Cycles: 24542
+Attention %: 0.25
+Model Name and Parameters gpt2-medium(355M)
+Embeddding Dimension: 1024
+Number of Heads: 16
+Context Length 4096
+Configuration: gpt2-medium(355M)_1024_16_4096
+
+
+
+
+
+
+Total Compute Cycles: 127314
+Total Attention Cycles: 12270
+Attention %: 0.09637588953296573
+Model Name and Parameters gpt2-large(774M)
+Embeddding Dimension: 1280
+Number of Heads: 20
+Context Length 2048
+Configuration: gpt2-large(774M)_1280_20_2048
+
+
+
+
+
+
+Total Compute Cycles: 121178
+Total Attention Cycles: 6134
+Attention %: 0.05061974945947284
+Model Name and Parameters gpt2-large(774M)
+Embeddding Dimension: 1280
+Number of Heads: 20
+Context Length 1024
+Configuration: gpt2-large(774M)_1280_20_1024
+
+
+
+
+
+
+Total Compute Cycles: 139586
+Total Attention Cycles: 24542
+Attention %: 0.17581992463427565
+Model Name and Parameters gpt2-large(774M)
+Embeddding Dimension: 1280
+Number of Heads: 20
+Context Length 4096
+Configuration: gpt2-large(774M)_1280_20_4096
+
+
+
+
+
+
+Total Compute Cycles: 79760
+Total Attention Cycles: 6134
+Attention %: 0.07690571715145436
+Model Name and Parameters gpt2-medium(355M)
+Embeddding Dimension: 1024
+Number of Heads: 16
+Context Length 1024
+Configuration: gpt2-medium(355M)_1024_16_1024
+
+
+
+
+
+
+Total Compute Cycles: 118110
+Total Attention Cycles: 3066
+Attention %: 0.025958851917703835
+Model Name and Parameters gpt2-large(774M)
+Embeddding Dimension: 1280
+Number of Heads: 20
+Context Length 512
+Configuration: gpt2-large(774M)_1280_20_512
+
+
+
+
+
+
+Total Compute Cycles: 116576
+Total Attention Cycles: 1532
+Attention %: 0.013141641504254736
+Model Name and Parameters gpt2-large(774M)
+Embeddding Dimension: 1280
+Number of Heads: 20
+Context Length 128
+Configuration: gpt2-large(774M)_1280_20_128
+
+
+

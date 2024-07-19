@@ -109,8 +109,17 @@ class scalesim:
         self.logs_generated_flag = True
 
         if self.verbose_flag:
-            print("************ SCALE SIM Run Complete ****************")
+            filename = str(self.config.get_topology_path()).split("/")[-1].split(".")[0]
+            Configuration= filename.split("_")
+            print("Model Name and Parameters", Configuration[0])
+            print("Embeddding Dimension:",Configuration[1])
+            print("Number of Heads:",Configuration[2])
+            print("Context Length",Configuration[3])
 
+            print("Configuration:",str(self.config.get_topology_path()).split("/")[-1].split(".")[0])
+            print("\n")
+            print("************ SCALE SIM Run Complete ****************")
+            print("\n")
     #
     def print_run_configs(self):
         df_string = "Output Stationary"

@@ -1,10 +1,10 @@
 import pandas as pd
 context_length = [128,256,512,1024,2048,4096]
 model_configs = {
-    "gpt2-small_(124M)": {"emb_dim": 768, "n_layers": 12, "n_heads": 12},
-    "gpt2-medium_(355M)": {"emb_dim": 1024, "n_layers": 24, "n_heads": 16},
-    "gpt2-large_(774M)": {"emb_dim": 1280, "n_layers": 36, "n_heads": 20},
-    "gpt2-xl_(1558M)": {"emb_dim": 1600, "n_layers": 48, "n_heads": 25},
+    "gpt2-small(124M)": {"emb_dim": 768, "n_layers": 12, "n_heads": 12},
+    "gpt2-medium(355M)": {"emb_dim": 1024, "n_layers": 24, "n_heads": 16},
+    "gpt2-large(774M)": {"emb_dim": 1280, "n_layers": 36, "n_heads": 20},
+    "gpt2-xl(1558M)": {"emb_dim": 1600, "n_layers": 48, "n_heads": 25},
 }
 
 for key,value in model_configs.items():
@@ -24,5 +24,5 @@ for key,value in model_configs.items():
             'M': 'int32',
             'N': 'int32',
             'K': 'int32'
-        }).to_csv(key+'_'+str(j)+'.csv',index=False)
+        }).to_csv(key+'_'+''+str(value["emb_dim"])+'_'+str(value["n_heads"])+'_'+str(j)+'.csv',index=False)
     

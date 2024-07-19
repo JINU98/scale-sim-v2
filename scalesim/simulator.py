@@ -115,7 +115,6 @@ class simulator:
         print("Total Compute Cycles:",total_compute_cycles)
         print("Total Attention Cycles:",total_attention_cycle)
         print("Attention %:", total_attention_cycle/total_compute_cycles)
-        print("\n\n")
 
     #
     def generate_reports(self):
