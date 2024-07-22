@@ -112,8 +112,13 @@ class simulator:
         self.all_layer_run_done = True
 
         self.generate_reports()
-        print("Total Compute Cycles:",total_compute_cycles)
+        filename = str(self.conf.get_topology_path()).split("/")[-1].split(".")[0]
+        Configuration= filename.split("_")
+        num_heads=Configuration[2]
+        total_attention_cycle=int(total_attention_cycle)*int(Configuration[2])
+        total_compute_cycles=total_compute_cycles+total_attention_cycle
         print("Total Attention Cycles:",total_attention_cycle)
+        print("Total Compute Cycles:",total_compute_cycles)
         print("Attention %:", total_attention_cycle/total_compute_cycles)
 
     #
