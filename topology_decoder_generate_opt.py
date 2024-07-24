@@ -10,8 +10,8 @@ opt_model_configs = {
     "opt-13b": {"emb_dim": 5120, "n_layers": 40, "n_heads": 40},
     "opt-30b": {"emb_dim": 7168, "n_layers": 48, "n_heads": 56},
     "opt-66b": {"emb_dim": 9216, "n_layers": 64, "n_heads": 72},
-     "opt-66b": {"emb_dim": 9216, "n_layers": 64, "n_heads": 72},
-      "opt-175b": {"emb_dim": 12288, "n_layers": 96, "n_heads": 96},
+    "opt-66b": {"emb_dim": 9216, "n_layers": 64, "n_heads": 72},
+    "opt-175b": {"emb_dim": 12288, "n_layers": 96, "n_heads": 96},
 
 }
 

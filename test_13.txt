@@ -1,0 +1,117 @@
+====================================================
+******************* SCALE SIM **********************
+====================================================
+Array Size: 	256x256
+SRAM IFMAP (kB): 	4096
+SRAM Filter (kB): 	8192
+SRAM OFMAP (kB): 	2048
+Dataflow: 	Weight Stationary
+CSV file path: 	./gpt2-xl(1558M)_1600_25_1024.csv
+Working in ESTIMATE BANDWIDTH mode.
+====================================================
+
+Running Layer 0 : Q
+self.ifmap_sram_reads  11200
+self.ofmap_sram_write 11200
+Compute cycles: 37582
+Stall cycles: 0
+Overall utilization: 0.10%
+Mapping efficiency: 79.72%
+Average IFMAP DRAM BW: 0.381 words/cycle
+Average Filter DRAM BW: 9.844 words/cycle
+Average OFMAP DRAM BW: 254.545 words/cycle
+
+Running Layer 1 : K
+self.ifmap_sram_reads  11200
+self.ofmap_sram_write 11200
+Compute cycles: 37582
+Stall cycles: 0
+Overall utilization: 0.10%
+Mapping efficiency: 79.72%
+Average IFMAP DRAM BW: 0.381 words/cycle
+Average Filter DRAM BW: 9.844 words/cycle
+Average OFMAP DRAM BW: 254.545 words/cycle
+
+Running Layer 2 : V
+self.ifmap_sram_reads  11200
+self.ofmap_sram_write 11200
+Compute cycles: 37582
+Stall cycles: 0
+Overall utilization: 0.10%
+Mapping efficiency: 79.72%
+Average IFMAP DRAM BW: 0.381 words/cycle
+Average Filter DRAM BW: 9.844 words/cycle
+Average OFMAP DRAM BW: 254.545 words/cycle
+
+Running Layer 3 : Attention_score
+self.ifmap_sram_reads  256
+self.ofmap_sram_write 1024
+Compute cycles: 3067
+Stall cycles: 0
+Overall utilization: 0.03%
+Mapping efficiency: 25.00%
+Average IFMAP DRAM BW: 0.015 words/cycle
+Average Filter DRAM BW: 7.812 words/cycle
+Average OFMAP DRAM BW: 256.000 words/cycle
+
+Running Layer 4 : Attention_output
+self.ifmap_sram_reads  1024
+self.ofmap_sram_write 256
+Compute cycles: 3067
+Stall cycles: 0
+Overall utilization: 0.03%
+Mapping efficiency: 25.00%
+Average IFMAP DRAM BW: 0.244 words/cycle
+Average Filter DRAM BW: 7.812 words/cycle
+Average OFMAP DRAM BW: 256.000 words/cycle
+
+Running Layer 5 : Add_norm
+self.ifmap_sram_reads  11200
+self.ofmap_sram_write 11200
+Compute cycles: 37582
+Stall cycles: 0
+Overall utilization: 0.10%
+Mapping efficiency: 79.72%
+Average IFMAP DRAM BW: 0.381 words/cycle
+Average Filter DRAM BW: 9.844 words/cycle
+Average OFMAP DRAM BW: 254.545 words/cycle
+
+Running Layer 6 : Dense_in
+self.ifmap_sram_reads  11200
+self.ofmap_sram_write 11200
+Compute cycles: 37582
+Stall cycles: 0
+Overall utilization: 0.10%
+Mapping efficiency: 79.72%
+Average IFMAP DRAM BW: 0.381 words/cycle
+Average Filter DRAM BW: 9.844 words/cycle
+Average OFMAP DRAM BW: 254.545 words/cycle
+
+Running Layer 7 : Dense_out
+self.ifmap_sram_reads  11200
+self.ofmap_sram_write 11200
+Compute cycles: 37582
+Stall cycles: 0
+Overall utilization: 0.10%
+Mapping efficiency: 79.72%
+Average IFMAP DRAM BW: 0.381 words/cycle
+Average Filter DRAM BW: 9.844 words/cycle
+Average OFMAP DRAM BW: 254.545 words/cycle
+
+
+----------------------------------------------------------------------------------------
+
+
+Total Attention Cycles: 153350
+Total Compute Cycles: 384976
+Attention %: 0.39833651967914885
+Model Name and Parameters gpt2-xl(1558M)
+Embeddding Dimension: 1600
+Number of Heads: 25
+Context Length 1024
+Configuration: gpt2-xl(1558M)_1600_25_1024
+
+
+************ SCALE SIM Run Complete ****************
+
+
