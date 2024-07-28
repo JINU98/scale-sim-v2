@@ -1,4 +1,4 @@
-#!/home/jmalekar/Documents/scale-sim-v2/env/bin/python3
+#!/home/jmalekar/Documents/scale-sim-v2/env/bin/python
 # EASY-INSTALL-ENTRY-SCRIPT: 'numpy==2.0.0','console_scripts','numpy-config'
 import re
 import sys

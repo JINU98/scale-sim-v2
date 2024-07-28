@@ -1,0 +1,9 @@
+Layer Name,M,N,K
+Q,1,1280,1280
+K,1,1280,1280
+V,1,1280,1280
+Attention_score,1,2048,64
+Attention_output,1,64,2048
+Add_norm,1,1280,1280
+Dense_in,1,1280,1280
+Dense_out,1,1280,1280

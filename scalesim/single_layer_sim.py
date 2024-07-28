@@ -220,8 +220,8 @@ class single_layer_sim:
         self.filter_sram_reads = self.compute_system.get_filter_requests()
         self.ofmap_sram_writes = self.compute_system.get_ofmap_requests()
         
-        print("self.ifmap_sram_reads ",self.ifmap_sram_reads)
-        print("self.ofmap_sram_write",self.ofmap_sram_writes )
+        print("ifmap_sram_reads ",self.ifmap_sram_reads)
+        print("ofmap_sram_write",self.ofmap_sram_writes )
 
         self.avg_ifmap_sram_bw = self.ifmap_sram_reads / self.total_cycles
         self.avg_filter_sram_bw = self.filter_sram_reads / self.total_cycles
@@ -289,3 +289,10 @@ class single_layer_sim:
         items += [self.ofmap_dram_start_cycle, self.ofmap_dram_stop_cycle, self.ofmap_dram_writes]
 
         return items
+    
+    def get_memory_access(self):
+        total_read_cycles=self.ifmap_sram_reads
+        total_write_cycles=self.ofmap_sram_writes
+        total_memory_access=total_read_cycles+total_write_cycles
+
+        return total_memory_access

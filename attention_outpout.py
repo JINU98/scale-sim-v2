@@ -10,7 +10,7 @@ def extract_text_between_markers(file_path, start_marker, end_marker):
     return matches
 
 # Usage
-file_path = 'gpt_output_latest_4.txt'
+file_path = 'gpt_clod_ws.txt'
 start_marker = '----------------------------------------------------------------------------------------'
 end_marker = '************ SCALE SIM Run Complete ****************'
 

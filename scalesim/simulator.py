@@ -47,6 +47,9 @@ class simulator:
         assert self.params_set_flag, 'Simulator parameters are not set'
         total_compute_cycles=0
         total_attention_cycle=0
+        
+        total_memory_acess=0
+        total_attention_memory_access=0
         # 1. Create the layer runners for each layer
         for i in range(self.num_layers):
             this_layer_sim = layer_sim()
@@ -83,13 +86,19 @@ class simulator:
                 stall_cycles = comp_items[1]
                 util = comp_items[2]
                 mapping_eff = comp_items[3]
+                
+                memory_access=single_layer_obj.get_memory_access()
+                
                 total_compute_cycles=total_compute_cycles + comp_cycles
+                total_memory_acess=total_memory_acess+memory_access
                 # total_attention_cycle = 
                 if('Attention' in layer_name):
                     total_attention_cycle=total_attention_cycle+comp_cycles
+                    total_attention_memory_access=total_attention_memory_access+memory_access
 
                 print('Compute cycles: ' + str(comp_cycles))
                 print('Stall cycles: ' + str(stall_cycles))
+                print('Memory Access: ' + str(single_layer_obj.get_memory_access()))
                 print('Overall utilization: ' + "{:.2f}".format(util) +'%')
                 print('Mapping efficiency: ' + "{:.2f}".format(mapping_eff) +'%')
 
@@ -115,11 +124,20 @@ class simulator:
         filename = str(self.conf.get_topology_path()).split("/")[-1].split(".")[0]
         Configuration= filename.split("_")
         num_heads=Configuration[2]
-        total_attention_cycle=int(total_attention_cycle)*int(Configuration[2])
+        total_compute_cycles=total_compute_cycles-total_attention_cycle
+        total_attention_cycle=int(total_attention_cycle)*int(num_heads)
         total_compute_cycles=total_compute_cycles+total_attention_cycle
         print("Total Attention Cycles:",total_attention_cycle)
         print("Total Compute Cycles:",total_compute_cycles)
         print("Attention %:", total_attention_cycle/total_compute_cycles)
+
+        total_memory_acess=total_memory_acess-total_attention_memory_access
+        total_attention_memory_access=int(total_attention_memory_access)*int(num_heads)
+        total_memory_acess=total_memory_acess+total_attention_memory_access
+
+        print("Total Attention Memory Access:",total_attention_memory_access)
+        print("Total Memory Access:",total_memory_acess)
+        print("Attention Memory Access %:", total_attention_memory_access/total_memory_acess)
 
     #
     def generate_reports(self):

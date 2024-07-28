@@ -1,9 +1,0 @@
-Layer Name,M,N,K
-Q,1,1600,1600
-K,1,1600,1600
-V,1,1600,1600
-Attention_score,1,512,64
-Attention_output,1,64,512
-Add_norm,1,1600,1600
-Dense_in,1,1600,1600
-Dense_out,1,1600,1600
