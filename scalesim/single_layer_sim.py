@@ -291,7 +291,7 @@ class single_layer_sim:
         return items
     
     def get_memory_access(self):
-        total_read_cycles=self.ifmap_sram_reads
+        total_read_cycles=self.ifmap_sram_reads + self.filter_sram_reads
         total_write_cycles=self.ofmap_sram_writes
         total_memory_access=total_read_cycles+total_write_cycles
 

@@ -1,0 +1,9 @@
+Layer Name,M,N,K
+Q,1,2560,2560
+K,1,2560,2560
+V,1,2560,2560
+Attention_score,1,1024,80
+Attention_output,1,80,1024
+Add_norm,1,2560,2560
+FFN_in,1,2560,10240
+FFN_out,1,10240,2560

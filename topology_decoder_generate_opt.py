@@ -2,16 +2,15 @@ import pandas as pd
 
 context_length = [128, 256, 512, 1024, 2048, 4096]
 opt_model_configs = {
-    "opt-125m": {"emb_dim": 768, "n_layers": 12, "n_heads": 12},
-    "opt-350m": {"emb_dim": 1024, "n_layers": 24, "n_heads": 16},
-    "opt-1.3b": {"emb_dim": 2048, "n_layers": 24, "n_heads": 32},
-    "opt-2.7b": {"emb_dim": 2560, "n_layers": 32, "n_heads": 32},
-    "opt-6.7b": {"emb_dim": 4096, "n_layers": 32, "n_heads": 32},
-    "opt-13b": {"emb_dim": 5120, "n_layers": 40, "n_heads": 40},
-    "opt-30b": {"emb_dim": 7168, "n_layers": 48, "n_heads": 56},
-    "opt-66b": {"emb_dim": 9216, "n_layers": 64, "n_heads": 72},
-    "opt-66b": {"emb_dim": 9216, "n_layers": 64, "n_heads": 72},
-    "opt-175b": {"emb_dim": 12288, "n_layers": 96, "n_heads": 96},
+    "1-opt-125m": {"emb_dim": 768, "n_layers": 12, "n_heads": 12},
+    "2-opt-350m": {"emb_dim": 1024, "n_layers": 24, "n_heads": 16},
+    "3-opt-1b3m": {"emb_dim": 2048, "n_layers": 24, "n_heads": 32},
+    "4-opt-2b7m": {"emb_dim": 2560, "n_layers": 32, "n_heads": 32},
+    "5-opt-6b7m": {"emb_dim": 4096, "n_layers": 32, "n_heads": 32},
+    "6-opt-13b": {"emb_dim": 5120, "n_layers": 40, "n_heads": 40},
+    "7-opt-30b": {"emb_dim": 7168, "n_layers": 48, "n_heads": 56},
+    "8-opt-66b": {"emb_dim": 9216, "n_layers": 64, "n_heads": 72},
+    "9-opt-175b": {"emb_dim": 12288, "n_layers": 96, "n_heads": 96},
 
 }
 

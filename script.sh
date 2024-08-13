@@ -1,8 +1,7 @@
-python scalesim/scale_decoder.py -ts /home/jmalekar/Documents/scale-sim-v2/topologies/gpt_models -c /home/jmalekar/Documents/scale-sim-v2/configs/cloud/ws.cfg > gpt_cloud_ws.txt
-python scalesim/scale_decoder.py -ts /home/jmalekar/Documents/scale-sim-v2/topologies/gpt_models -c /home/jmalekar/Documents/scale-sim-v2/configs/cloud/is.cfg > gpt_cloud_is.txt
-python scalesim/scale_decoder.py -ts /home/jmalekar/Documents/scale-sim-v2/topologies/gpt_models -c /home/jmalekar/Documents/scale-sim-v2/configs/cloud/os.cfg > gpt_cloud_os.txt
+python /work/jmalekar/scale-sim-v2/scalesim/scale_decoder.py -ts /work/jmalekar/scale-sim-v2/topologies/opt_models -c /work/jmalekar/scale-sim-v2/configs/cloud/is.cfg > opt_cloud_is.txt
+python /work/jmalekar/scale-sim-v2/scalesim/scale_decoder.py -ts /work/jmalekar/scale-sim-v2/topologies/opt_models -c /work/jmalekar/scale-sim-v2/configs/cloud/ws.cfg > opt_cloud_ws.txt
+python /work/jmalekar/scale-sim-v2/scalesim/scale_decoder.py -ts /work/jmalekar/scale-sim-v2/topologies/opt_models -c /work/jmalekar/scale-sim-v2/configs/cloud/os.cfg > opt_cloud_os.txt
 
-python scalesim/scale_decoder.py -ts /home/jmalekar/Documents/scale-sim-v2/topologies/gpt_models -c /home/jmalekar/Documents/scale-sim-v2/configs/edge/ws.cfg > gpt_edge_ws.txt
-python scalesim/scale_decoder.py -ts /home/jmalekar/Documents/scale-sim-v2/topologies/gpt_models -c /home/jmalekar/Documents/scale-sim-v2/configs/edge/is.cfg > gpt_edge_is.txt
-python scalesim/scale_decoder.py -ts /home/jmalekar/Documents/scale-sim-v2/topologies/gpt_models -c /home/jmalekar/Documents/scale-sim-v2/configs/edge/os.cfg > gpt_edge_os.txt
-
+python /work/jmalekar/scale-sim-v2/scalesim/scale_decoder.py -ts /work/jmalekar/scale-sim-v2/topologies/opt_models -c /work/jmalekar/scale-sim-v2/configs/edge/is.cfg > opt_edge_is.txt
+python /work/jmalekar/scale-sim-v2/scalesim/scale_decoder.py -ts /work/jmalekar/scale-sim-v2/topologies/opt_models -c /work/jmalekar/scale-sim-v2/configs/edge/ws.cfg > opt_edge_ws.txt
+python /work/jmalekar/scale-sim-v2/scalesim/scale_decoder.py -ts /work/jmalekar/scale-sim-v2/topologies/opt_models -c /work/jmalekar/scale-sim-v2/configs/edge/os.cfg > opt_edge_os.txt
