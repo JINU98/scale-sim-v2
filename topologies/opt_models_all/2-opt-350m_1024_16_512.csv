@@ -1,9 +1,0 @@
-Layer Name,M,N,K
-Q,1,1024,1024
-K,1,1024,1024
-V,1,1024,1024
-Attention_score,1,512,64
-Attention_output,1,64,512
-Add_norm,1,1024,1024
-FFN_in,1,1024,4096
-FFN_out,1,4096,1024
